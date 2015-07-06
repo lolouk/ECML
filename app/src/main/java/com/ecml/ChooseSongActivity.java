@@ -117,7 +117,7 @@ public class ChooseSongActivity extends BaseTabActivity implements OnTabChangeLi
         if (ECML.intent != null) {
         	mode = ECML.intent.getStringExtra(ChooseSongActivity.mode);
         }
-        Log.i("MODE" , "" + mode);
+        Log.d("MODE" , "" + mode);
 
         // Get the number of the current activity
         int number = this.getIntent().getIntExtra("number",0);
@@ -129,28 +129,46 @@ public class ChooseSongActivity extends BaseTabActivity implements OnTabChangeLi
 			if (lvl == 1) {
 				intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, SpeedGamelvl1.class);
 				intent.putExtra(SpeedGamelvl1.MidiTitleID, file.toString());
+                intent.putExtra("number",number);
+                startActivity(intent);
+                finish();
 			} else {
 				intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, SpeedGamelvln.class);
 				intent.putExtra(SpeedGamelvln.MidiTitleID, file.toString());
 				intent.putExtra("level", lvl);
+                intent.putExtra("number",number);
+                startActivity(intent);
+                finish();
 			}
 			
 		} else if (mode.equals("reading")) {
 			if (lvl == 1) {
 				intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, ReadingGameBeginner.class);
 				intent.putExtra(ReadingGameBeginner.MidiTitleID, file.toString());
+                intent.putExtra("number",number);
+                startActivity(intent);
+                finish();
             }
 			else {
 				intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, ReadingGameNormal.class);
 				intent.putExtra(ReadingGameNormal.MidiTitleID, file.toString());
+                intent.putExtra("number",number);
+                startActivity(intent);
+                finish();
 			}
 			
 		} else if (mode.equals("chooseSong")) {
 			intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, SheetMusicActivity.class);
-		}
-        intent.putExtra("number",number);
-        startActivity(intent);
-		finish();
+            intent.putExtra("number",number);
+            startActivity(intent);
+            finish();
+		} else if (mode.equals("studentActivities")) {
+            Log.d("ChooseSongActivity:doOp","here");
+            intent = new Intent();
+            intent.putExtra("song", file.getUri().toString());
+            setResult(Activity.RESULT_OK, intent);
+            finish();
+        }
     }
 
 

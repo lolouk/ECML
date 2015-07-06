@@ -32,6 +32,9 @@ import java.util.Set;
  *
  */
 public class StudentActivities extends Activity {
+
+	public static final int REQUEST_CODE = 1;
+
 	/**
 	 * Called when the activity is first created.
 	 */
@@ -73,8 +76,8 @@ public class StudentActivities extends Activity {
 			@Override
 			public void onClick(View view) {
 				Intent intent = new Intent(getBaseContext(),ChooseSongActivity.class);
-				intent.putExtra("song",true);
-				startActivity(intent);
+				intent.putExtra(ChooseSongActivity.mode,"studentActivities");
+				startActivityForResult(intent,REQUEST_CODE);
 			}
 		});
 
@@ -152,6 +155,21 @@ public class StudentActivities extends Activity {
 				return true;
 			default:
 				return super.onOptionsItemSelected(item);
+		}
+	}
+
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		switch(requestCode) {
+			case REQUEST_CODE: {
+				if (resultCode == Activity.RESULT_OK) {
+					String newText = data.getStringExtra("song");
+					TextView text = (TextView) findViewById(R.id.song_title);
+					text.setText(newText);
+				}
+				break;
+			}
 		}
 	}
 
