@@ -181,33 +181,71 @@ public class ReadWriteXMLFile {
 	 */
 	public static void edit(ActivityParameters parameters, Context context) {
 		try {
-			FileInputStream f = context.openFileInput("SequenceOfActivity.xml");
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(f);
+			ArrayList<ActivityParameters> list = read(context);
+			ActivityParameters tmp;
 
-			NodeList nList = doc.getElementsByTagName("activity");
+			FileOutputStream fos = context.openFileOutput("SequenceOfActivity.xml",Context.MODE_PRIVATE);
+			XmlSerializer serializer = Xml.newSerializer();
+			serializer.setOutput(fos, "UTF-8");
+			serializer.startDocument(null, Boolean.valueOf(true));
+			serializer.setFeature("http://xmlpull.org/v1/doc/features.html#indent-output", true);
 
-			for (int temp = 0; temp < nList.getLength(); temp++) {
-				Node nNode = nList.item(temp);
-				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-					Element element = (Element) nNode;
-					int number = Integer.parseInt(element.getAttribute("number"));
-					if (number == parameters.getNumber()) {
-						Log.d("ReadWriteXMLFile:Edit", "number = " + String.valueOf(number));
-						element.setAttribute("type", parameters.getActivityType());
-						element.getElementsByTagName("duration").item(0).setTextContent(String.valueOf(parameters.getDuration()));
-						element.getElementsByTagName("song").item(0).setTextContent(parameters.getSong());
-						element.getElementsByTagName("tempo").item(0).setTextContent(String.valueOf(parameters.getTempo()));
-						element.getElementsByTagName("gameLevel").item(0).setTextContent(String.valueOf(parameters.getGameLevel()));
-						element.getElementsByTagName("active").item(0).setTextContent(String.valueOf(parameters.isActive()));
-						element.getElementsByTagName("finished").item(0).setTextContent(String.valueOf(parameters.isFinished()));
-						element.getElementsByTagName("countdown").item(0).setTextContent(String.valueOf(parameters.getCountdown()));
-						Log.d("ReadWriteXMLFile:Edit", "countdown = " + element.getElementsByTagName("countdown").item(0).getTextContent());
-					}
+			serializer.startTag("", "sequenceOfactivity");
+			for (ActivityParameters a : list) {
+				if (a.getNumber() == parameters.getNumber()) {
+					tmp = parameters;
 				}
+				else {
+					tmp = a;
+				}
+
+				//Element activity
+				serializer.startTag("", "activity");
+				serializer.attribute("", "type", tmp.getActivityType());
+				serializer.attribute("", "number", String.valueOf(tmp.getNumber()));
+
+				//Element duration
+				serializer.startTag("", "duration");
+				serializer.text(String.valueOf(tmp.getDuration()));
+				serializer.endTag("", "duration");
+
+				//Element song
+				serializer.startTag("", "song");
+				serializer.text("song");
+				serializer.endTag("", "song");
+
+				//Element tempo
+				serializer.startTag("", "tempo");
+				serializer.text(String.valueOf(tmp.getTempo()));
+				serializer.endTag("", "tempo");
+
+				//Element gameLevel
+				serializer.startTag("", "gameLevel");
+				serializer.text(String.valueOf(tmp.getGameLevel()));
+				serializer.endTag("", "gameLevel");
+
+				//Element active
+				serializer.startTag("", "active");
+				serializer.text(String.valueOf(tmp.isActive()));
+				serializer.endTag("", "active");
+
+				//Element finished
+				serializer.startTag("", "finished");
+				serializer.text(String.valueOf(tmp.isFinished()));
+				serializer.endTag("", "finished");
+
+				//Element countdown
+				serializer.startTag("", "countdown");
+				serializer.text(String.valueOf(tmp.getCountdown()));
+				serializer.endTag("", "countdown");
+
+				serializer.endTag("", "activity");
 			}
-            f.close();
+			serializer.endTag("","sequenceOfactivity");
+
+			serializer.endDocument();
+			serializer.flush();
+			fos.close();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -242,8 +280,10 @@ public class ReadWriteXMLFile {
                         boolean active = Boolean.parseBoolean(element.getElementsByTagName("active").item(0).getTextContent());
                         boolean finished = Boolean.parseBoolean(element.getElementsByTagName("finished").item(0).getTextContent());
                         int countdown = Integer.parseInt(element.getElementsByTagName("countdown").item(0).getTextContent());
-                        Log.d("ReadWriteXMLFile:ReadAc", "countdown = " + String.valueOf(countdown));
-                        return new ActivityParameters(number, type, duration, song, tempo, active, finished, countdown);
+						Log.d("ReadWriteXMLFile:ReadAc","number =" + String.valueOf(num));
+						Log.d("ReadWriteXMLFile:ReadAc","active = " + String.valueOf(active));
+						Log.d("ReadWriteXMLFile:ReadAc","finished = " + String.valueOf(finished));
+						return new ActivityParameters(number, type, duration, song, tempo, active, finished, countdown);
                     }
                 }
             }
