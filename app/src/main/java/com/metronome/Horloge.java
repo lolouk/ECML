@@ -35,9 +35,9 @@ public class Horloge {
 
 		audioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 		// Get the current volume
-		volume = audioManager.getStreamVolume(AudioManager.STREAM_RING);
+		volume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
 		// Get the maximum volume of the device
-		volumeMax = audioManager.getStreamMaxVolume(AudioManager.STREAM_RING);
+		volumeMax = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
 		// Set the beep according to the current volume (need to be in %)
 		beep = new ToneGenerator(AudioManager.FLAG_PLAY_SOUND, volume * 100 / volumeMax);
 		timer = new Timer();
@@ -49,8 +49,8 @@ public class Horloge {
 			public void run() {
 				try {
 					// If the volume has changed, then update the beep
-					if (volume != audioManager.getStreamVolume(AudioManager.STREAM_RING)) {
-						volume = audioManager.getStreamVolume(AudioManager.STREAM_RING);
+					if (volume != audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)) {
+						volume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
 						beep.release();
 						beep = new ToneGenerator(AudioManager.FLAG_PLAY_SOUND, volume * 100 / volumeMax);
 					}
