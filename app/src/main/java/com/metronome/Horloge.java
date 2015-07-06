@@ -15,6 +15,7 @@ import android.media.ToneGenerator;
  * The Horloge is called by a Metronome and will play sounds at the correct time for it,
  * by using a timer.
  */
+
 public class Horloge {
 
 	private Timer timer;				/* The timer */
