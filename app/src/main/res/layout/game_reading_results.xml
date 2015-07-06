@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/blue"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Help"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Change game"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:text="Back to the score"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="right"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/appreciation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/nextLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_marginRight="42dp"
+        android:layout_toLeftOf="@+id/score"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

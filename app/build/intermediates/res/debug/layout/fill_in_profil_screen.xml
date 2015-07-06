@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      
+
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+         android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red_OrangeRed"
+       />
+    
+   
+     
+    <EditText android:id="@+id/userName"
+        android:layout_height="wrap_content"
+        android:layout_width="250dip"
+        android:singleLine="true"
+        android:password="false"
+      
+     />
+
+     <LinearLayout    android:layout_width="wrap_content"
+               		 android:layout_height="wrap_content"
+                     android:layout_weight="0"
+                     android:orientation="horizontal">
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:text="@string/firstName"
+         android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingRight="15dip"
+        android:textColor="@color/Red_OrangeRed"
+    />
+    
+    <EditText android:id="@+id/firstname"
+    android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:password="false"
+        android:paddingRight="40dip"
+    />
+ 
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastName"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingRight="15dip"
+        android:textColor="@color/Red_OrangeRed"
+        android:paddingLeft="50dip"
+        android:paddingBottom="90dip"
+    />
+    
+    <EditText android:id="@+id/lastName"
+    	android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:password="false"
+    />
+    </LinearLayout>
+    	
+    	     <LinearLayout    android:layout_width="wrap_content"
+               		 android:layout_height="wrap_content"
+             
+                     android:orientation="horizontal">
+
+        <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/birthdate"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red_OrangeRed"
+        android:paddingRight="15dip"
+    />
+    
+<DatePicker 
+    android:id="@+id/birthDate"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:calendarViewShown="false"
+	android:endYear="2014"
+	android:maxDate="01/01/2014"
+	android:startYear="1940"
+    android:gravity="left"
+ >
+	</DatePicker>
+	
+	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:text="Gender"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red_OrangeRed"
+        android:padding="20dip"
+        
+    />
+<RadioGroup
+	android:id="@+id/gender"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:text="gender"
+    >
+ 
+    <RadioButton
+    	android:id="@+id/radio1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"  
+    	android:checked="true"
+    	android:text="Female"/>
+    	
+    <RadioButton
+    	android:id="@+id/radio2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"  
+    	android:checked="false"
+    	android:text="Male"/>
+    </RadioGroup>
+    </LinearLayout>
+    
+    
+
+         <LinearLayout    android:layout_width="wrap_content"
+               		 android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:paddingBottom="40dip">
+        <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:text="@string/email"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red_OrangeRed"
+         android:paddingRight="15dip"
+    />
+       <EditText android:id="@+id/email"
+    	android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:password="false"
+         android:paddingRight="40dip"
+    />
+
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:text="Instrument"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red_OrangeRed"
+        android:paddingRight="60dip"
+         android:paddingLeft="60dip"
+    />
+    
+<Spinner
+    android:id="@+id/instruments_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     />
+    </LinearLayout>
+    
+       <Button android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:layout_gravity="center"
+         />
+</LinearLayout>
+<!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/fill_in_profil_screen.xml -->

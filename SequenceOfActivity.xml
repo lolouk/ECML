@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sequenceOfActivity SYSTEM "SequenceOfActivity.dtd" >
+<sequenceOfActivity>
+    <activity type="PA">
+        <duration>60</duration>
+        <tempo>250</tempo>
+        <songsList>
+            <song1 title="Habanera from Carmen"></song1>
+            <song2 title="To a Wild Rose"></song2>
+			<song3 title="Elegy in E minor"></song3>
+        </songsList>
+        <gameLevel>2</gameLevel>
+    </activity>
+    
+        <activity type="PI">
+        <duration>20</duration>
+        <tempo>100</tempo>
+		 <songsList>
+            <song1 />
+            <song2 />
+			<song3 />
+        </songsList>
+        <gameLevel>2</gameLevel>
+    </activity>
+    
+    <activity type="S">
+        <duration>20</duration>
+        <tempo>250</tempo>
+        <songsList>
+            <song1 title="Habanera from Carmen"></song1>
+            <song2 title="To a Wild Rose"></song2>
+			<song3 title="Elegy in E minor"></song3>
+        </songsList>
+		<gameLevel>2</gameLevel>
+    </activity>
+    
+</sequenceOfActivity>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mainDropDownMenu"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/app_name">
+        <menu>
+            <item
+                android:id="@+id/mainScreen"
+                android:icon="@drawable/ic_menu_selectall_holo_light"
+                android:title="@string/main_menu"/>
+            <item
+                android:id="@+id/chooseSongActivity"
+                android:icon="@drawable/ic_menu_search"
+                android:title="@string/choose_song"/>
+            <item
+                android:id="@+id/calendarActivity"
+                android:icon="@drawable/ic_menu_month"
+                android:title="@string/calendar_str"/>
+            <item
+                android:id="@+id/audioActivity"
+                android:icon="@drawable/ic_lockscreen_search_normal"
+                android:title="@string/audio"/>
+            <item
+                android:id="@+id/videoActivity"
+                android:icon="@drawable/ic_action_video"
+                android:title="@string/video"/>
+            <item
+                android:id="@+id/gameActivity"
+                android:icon="@drawable/ic_action_gamepad"
+                android:title="@string/game_str"/>
+            <item
+                android:id="@+id/messengerActivity"
+                android:icon="@drawable/ic_menu_start_conversation"
+                android:title="@string/messenger"/>
+            <item
+                android:id="@+id/youtubeActivity"
+                android:icon="@drawable/logo_youtube"
+                android:title="@string/youtube"/>
+            <item
+                android:id="@+id/metronomeActivity"
+                android:icon="@drawable/ic_metronome"
+                android:title="@string/metronome"/>
+            <item
+                android:id="@+id/tuningForkActivity"
+                android:icon="@drawable/ic_tuning_fork_black"
+                android:title="@string/tuning"/>
+            <item
+                android:id="@+id/communicationActivity"
+                android:icon="@drawable/ic_menu_allfriends"
+                android:title="@string/communication"/>
+        </menu>
+    </item>
+
+</menu>

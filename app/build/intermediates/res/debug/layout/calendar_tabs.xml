@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+          android:id="@android:id/tabhost">
+         
+        <LinearLayout 
+                android:id="@+id/LinearLayout01"
+                android:orientation="vertical" 
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+                
+                <TabWidget 
+                    android:id="@android:id/tabs"
+                    android:layout_height="wrap_content" 
+                    android:layout_width="fill_parent">
+                </TabWidget>
+                
+                <FrameLayout 
+                    android:id="@android:id/tabcontent"
+                    android:layout_height="fill_parent"
+                     android:layout_width="fill_parent">
+                </FrameLayout>
+                
+        </LinearLayout>
+
+</TabHost>
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/orange"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Calendar settings"
+        android:textColor="#ffffff" />
+
+    
+    <Button
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/orange"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Display calendar"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Add event"
+        android:textColor="#ffffff" />
+
+ 
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/orange"
+            android:text="Choose a rehearsal program"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+        <ListView
+            android:id="@+id/calendar_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+        </ListView>
+        
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+</LinearLayout> --><!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/calendar_tabs.xml -->

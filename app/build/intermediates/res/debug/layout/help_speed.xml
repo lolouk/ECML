@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+     <TextView
+        android:id="@+id/howto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="@string/howtoplay"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+    
+    
+    <TextView
+        android:id="@+id/rules"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="@string/help_speed"
+        android:gravity="left"
+        android:textSize="20sp"
+        />
+
+  
+
+</LinearLayout><!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/help_speed.xml -->

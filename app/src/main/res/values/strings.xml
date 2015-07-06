@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">ECML</string>
+    <string name="choose_song">Choose Song</string>
+    <string name="song_settings_str">Settings</string>
+    <string name="save_images_str">Save As Images</string>
+    <string name="save_images_descr_str">Save the sheet music as images, in the directory /ECML/MusicSheets, with the following filename</string>
+    <string name="help_str">Help</string>
+    <string name="sheet_prefs_title">Sheet Music Preferences</string>
+    <string name="restore_defaults">Restore Default Settings</string>
+    <string name="select_tracks_to_display">Select Tracks to Display</string>
+    <string name="select_tracks_to_mute">Select Tracks to Mute</string>
+    <string name="select_instruments_per_track">Select Instruments For Each Track</string>
+    <string name="set_all_tracks">Display and Unmute All Tracks</string>
+    <string name="set_all_to_piano">Set All Instruments to Piano</string>
+    <string name="scroll_vertically">Scroll Vertically</string>
+    <string name="show_piano">Show the Piano</string>
+    <string name="show_note_colors">Show a different color for each note</string>
+    <string name="show_lyrics">Show Lyrics</string>
+    <string name="choose_delay">Choose delay</string>
+    <string name="show_note_letters">Show Note Letters</string>
+    <string name="combine_to_two_staffs">Combine To Two Staffs</string>
+    <string name="combine_to_two_staffs_summary">Combine all the tracks into two staffs (left hand and right hand staffs). </string>
+    <string name="split_to_two_staffs">Split Track Into Two Staffs</string>
+    <string name="split_to_two_staffs_summary">Split the single track into two staffs (left hand and right hand staffs).</string>
+    <string name="transpose">Transpose Notes</string>
+    <string name="key_signature">Key Signature</string>
+    <string name="time_signature">Time Signature</string>
+    <string name="combine_interval">Combine Interval</string>
+    <string name="combine_interval_summary">Notes within the given interval (in milliseconds) are combined into a single chord</string>
+    <string name="right_hand_color">Right Hand Color</string>
+    <string name="left_hand_color">Left Hand Color</string>
+    <string name="show_measures">Show Measure Numbers</string>
+    <string name="play_measures_in_loop_title">Settings for Play Measures in a Loop</string>
+    <string name="play_measures_in_loop">Play Measures in a Loop</string>
+    <string name="play_measures_in_loop_start">Start Measure</string>
+    <string name="play_measures_in_loop_end">End Measure</string>
+    <string name="scan_button_title">Scan SD Card for MIDI files</string>
+    <string name="scan_files_str">Scan for MIDI Files</string>
+    <string name="browse_files_str">Browse for MIDI Files</string>
+    <string name="youtube_str">Go on Youtube</string>
+    <string name="upload_youtube">Upload a video on Youtube</string>
+    <string name="calendar_str">Calendar</string>
+    <string name="game_str">Play game</string>
+    <string name="stop_recording_str">Stop recording</string>
+    <string name="start_recording_str">Start recording</string>
+    <string name="choose_title_str">Choose the title</string>
+    <string name="audio_format_str">Audio Format</string>
+    <string name="play_last_str">Play last record</string>
+    <string name="pausereplay">Pause replay</string>
+    <string name="audio">Audio Recording</string>
+    <string name="video">Video Recording</string>
+    <string name="switchcamera">Switch camera</string>
+    <string name="messenger">ECML Messenger</string>
+    <string name="score">Show scores</string>
+    <string name="youtube">Youtube</string>
+    <string name="metronome">Metronome</string>
+    <string name="tuning">Tuning fork</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="clickme">Click me</string>
+    <string name="recordscore">Record with scores</string>
+    <string name="startmetronome">Start metronome</string>
+    <string name="stopmetronome">Stop metronome</string>
+    <string name="howtoplay">How to play the game</string>
+    <string name="help_reading">Read the notes and then find them. The goal is to find the maximum of right notes.</string>
+    <string android:id="@+id/help_speed" name="help_speed" android:layout_width="wrap_content" android:layout_height="wrap_content">Play the notes with the good rythm.</string>
+    <string name="shift_down">Shift Down</string>
+    <string name="shift_up">Shift Up</string>
+    <string name="note">Note : </string>
+    <string name="frequence">Frequence : </string>
+    <string name="hertz">Hz</string>
+    <string name="adjust_octave">Adjust Octave</string>
+    <string name="adjust_note">Adjust Note</string>
+    <string name="adjust_ref_pitch">Adjust Reference Pitch</string>
+    <string name="help_tuning_fork">Select a note and press the toggle button to hear it. The note played is displayed at the top-right hand corner.
+        \nPress Adjust Octave to get back to Octave number 4.
+        \nPress Adjust Note to get back to the note A of the current Octave.</string>
+    <string name="how_to_use_tuning_fork">How to use the Tuning Fork</string>
+    <string name="help_musical_ear">"Hear the notes and then find them. The goal is to find the maximum of right notes."</string>
+    <string name="help_technique">The rhythm of the song changed. Practise the song with the new rhythm.</string>
+    <string name="speed_game_help">How to play the SpeedGame</string>
+    <string name="speed_game_reading">\nAt level 1, the game is waiting for you to play the right note. You need to scroll down or up the sheetmusic yourself. You can highlight the note yourself too.\n\nAt level 2, you have to play the note when it is highlight. If you play the good note at the right time you get one point.\nAt the end of the song, you can see how many notes you play right.\n\nLevels 3 and 4 work the same way are level 2 but are harder. </string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="password_again">Password(again):</string>
+    <string name="email">E-mail</string>
+    <string name="sign_up">Sign up</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="user_authenticated_success">User authenticated successfully! </string>
+    <string name="make_sure_username_and_password_correct">Please make sure that
+	your username and password correct</string>
+    <string name="signup_fill_all_fields">Please fill all fields</string>
+    <string name="exit_application">Exit</string>
+    <string name="signup_successfull">Your registration is completed successfully,\n you can login now </string>
+    <string name="signup_username_crashed">Your username have been already taken, please try another username</string>
+    <string name="username_and_password_length_short">Username and password length must be at least 5</string>
+    <string name="signup_type_same_password_in_password_fields">Type same password in password fields</string>
+    <string name="facebook">Facebook</string>
+    <string name="clickToSignUp"><u><b><i> Sign Up Here</i></b></u></string>
+    <string name="communication">Communication</string>
+    <string name="gmail">Gmail</string>
+    <!-- Messenger service strings -->
+    <string name="add_new_friend">Add new friend</string>
+    <string name="type_friend_username">Please type your friend username</string>
+    <string name="new_friend_request_exist">New friend request</string>
+    <string name="approve_selected_friends">Approve Selecteds and Discard Others</string>
+    <string name="not_connected_to_network">There is no available connected network</string>
+    <string name="message_cannot_be_sent">Message was not been able to sent</string>
+    <string name="invitation">FRIEND\'S INVITATION</string>
+    <string name="friendlist">FRIEND LIST</string>
+    <string name="groupList"> GROUP LIST</string>
+    <string name="delete_friend"> Delete Friend</string>
+    <string name="friend_deleted">Your friend has been deleted</string>
+    <string name="messaging">Messaging</string>
+    <string name="local_service_started">App service started</string>
+    <string name="local_service_stopped">App service stopped</string>
+    <string name="local_service_connected">local_service_connected</string>
+    <string name="OK">OK</string>
+    <string name="not_connected_to_service">Not connected to the service and 
+	this is not supposed to happened so please inform this situation to 
+	ahmetmermerkaya@hotmail.com</string>
+    <string name="add">Add</string>
+    <string name="request_sent">Your request has been sent</string>
+    <string name="no_friend">You have no friend,\n you can add new friends by menu</string>
+    <string name="fill_both_username_and_password">Please fill both username and password</string>
+    <string name="user_offline">This user is offline</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="birthdate">Birthdate</string>
+
+    <string-array name="instruments_array">
+        <item>Piano</item>
+        <item>Violin</item>
+        <item>Guitar</item>
+    </string-array>
+
+    <string name="signup_failed">Sign up failed because of unknown reason</string>
+    <string name="message_erreur">Message erreur</string>
+
+    <string-array name="questions_array">
+        <item> What was your childhood nickname? </item>
+        <item>What time of the day were you born?</item>
+        <item>What was your dream job as a child?</item>
+        <item>What was your maternal grandfatherâ€™s first name?</item>
+    </string-array>
+	
+	<string name="security_question">Choose a security question</string>
+	<string name="ForgottenPassword"><u><b><i>Forgot Your Password ?</i></b></u> </string>
+	<string name="wrong_answer">Your answer is wrong ! </string>
+	
+	<!-- XML Form -->
+	<string name="studentName">Student name</string>
+	<string name="chooseActivity">Choose an Activity</string>
+	<string-array name="activity_array">
+        <item> Play instrument alone</item>
+        <item> Reading notes</item>
+        <item> Check with the teacher</item>
+        <item> Play instrument with the piano </item>
+        <item> Work difficult parts</item>
+    </string-array>
+    <string-array name="duration_array">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string name="select">Select one activity</string>
+	<string name="time">Duration of the activity</string>
+	<string name="tempo">Default Tempo</string>
+	<string name="songs_list">List of the songs</string>
+	<string name="game_level">Game level</string>	
+
+
+
+    <string name="delay">Delay</string>
+    <string name="choose_notation">Choose the Notation</string>
+    <string name="choose_transpose">Choose the Transposition</string>
+    <string name="choose_key">Choose the Key Signature</string>
+    <string name="choose_time_signature">Choose the Time Signature</string>
+    <string name="choose_combine_interval">Choose the Combine Interval</string>
+    <string name="choose_start_measure">Choose the start measure</string>
+    <string name="choose_end_measure">Choose the End Measure</string>
+    <string name="back_to_score">Back to the Score</string>
+    <string name ="main_menu">Main Menu</string>
+    
+
+   <string name="finish"> FINISH!</string>
+   <string name="emailNotValid">Email address is not valid </string>
+   <string name="ProfilCompleted"> Profil completed successfully</string>
+
+</resources>

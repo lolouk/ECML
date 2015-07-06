@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT sequenceOfActivity (activity*)>
+<!--PRACTICE_ALONE = "PI"
+	PRACTICE_WITH_ACCOMPANIMENT = "PA"
+	CHECK_WITH_YOUR_TEACHER = "C"
+	READING_OF_NOTES = "R"
+	SPEED_GAME = "S" -->
+	
+
+<!ELEMENT activity (duration, tempo, songsList, gameLevel)>
+<!ATTLIST activity type (PI|S|R|C|PA) #REQUIRED>
+
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT tempo (#PCDATA)>
+
+
+<!ELEMENT songsList (song1, song2,song3)>
+	<!ELEMENT song1 (#PCDATA)>
+	<!ATTLIST song1 title CDATA #IMPLIED>
+	<!ELEMENT song2  (#PCDATA)>
+	<!ATTLIST song2 title CDATA #IMPLIED >
+	<!ELEMENT song3 (#PCDATA)>
+	<!ATTLIST song3 title CDATA #IMPLIED>
+
+
+<!ELEMENT gameLevel (#PCDATA)>
+

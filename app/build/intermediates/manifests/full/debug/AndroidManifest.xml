@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecml"
+    android:versionCode="9"
+    android:versionName="2.6" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name="com.ecml.ECML"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Ecmltheme" >
+        <activity
+            android:name="com.ecml.ECMLActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ecml.SheetMusicActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.mid"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ecml.ChooseSongActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity android:name="com.ecml.FileBrowserActivity" >
+        </activity>
+        <activity android:name="com.ecml.AllSongsActivity" >
+        </activity>
+        <activity android:name="com.ecml.RecentSongsActivity" >
+        </activity>
+        <activity android:name="com.ecml.SettingsActivity" >
+        </activity>
+        <activity
+            android:name="com.game.SpeedGamelvl"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.game.SpeedGamelvl1"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.game.SpeedGamelvln"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity android:name="com.ecml.HelpActivity" >
+        </activity>
+        <activity
+            android:name="com.game.SpeedGameModeActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.calendar.CalendarActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.game.GameActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.sideActivities.AudioRecordingActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.sideActivities.VideoRecordingActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.sideActivities.TuningForkActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.metronome.MetronomeActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.sideActivities.YoutubeActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.game.ReadingGameModeActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.game.ReadingGameBeginner"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.game.ReadingGameNormal"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity android:name="com.calendar.CalendarPreferencesActivity" >
+        </activity>
+        <activity android:name="com.calendar.CalendarAddEventsActivity" >
+        </activity>
+        <activity android:name="com.calendar.CalendarRehearsalProgramActivity" >
+        </activity>
+        <activity android:name="com.calendar.CalendarDisplayActivity" >
+        </activity>
+        <activity
+            android:name="com.ecml.FacebookActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity android:name="com.login.Login" >
+        </activity>
+        <activity android:name="com.login.SignUp" >
+        </activity>
+
+        <!-- Messenger Service activities -->
+
+        <activity android:name="com.androidim.FriendList" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.NORMAL" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.androidim.services.IMService" >
+        </service>
+
+        <activity android:name="com.androidim.Login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.NORMAL" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidim.Profil" >
+        </activity>
+        <activity android:name="com.ecml.StudentActivities" >
+        </activity>
+        <activity android:name="com.androidim.AddFriend" >
+        </activity>
+        <activity android:name="com.androidim.DeleteFriend" >
+        </activity>
+        <activity android:name="com.androidim.Messaging" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.NORMAL" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidim.SignUp" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.NORMAL" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.androidim.UnApprovedFriendList" >
+        </activity>
+        <activity android:name="com.login.ForgottenPasswordActivity" >
+        </activity>
+        <activity android:name="com.game.MusicalEarGameModeActivity" />
+        <activity android:name="com.game.TechniqueActivity" />
+    </application>
+
+</manifest>

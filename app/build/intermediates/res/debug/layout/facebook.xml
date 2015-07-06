@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@color/blue"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:theme="@android:style/Theme.Holo.Light"
+  android:weightSum="2" >
+  
+    <LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent" 
+	  android:layout_weight="1"
+	  android:gravity="center"
+	  android:orientation="vertical">
+	  
+        <ImageView              
+           android:id="@+id/facebook"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/facebookbtn" />
+        <TextView
+           android:id="@+id/facebook"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/facebook" />
+ 	</LinearLayout>
+
+ 	    <LinearLayout
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent" 
+		  android:layout_weight="1"
+		  android:gravity="center"
+		  android:orientation="vertical">
+
+			<ImageView
+	           android:id="@+id/gmail"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+				android:src="@drawable/gmailbtn"/>
+	        <TextView
+	           android:id="@+id/gmail"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:text="@string/gmail" />
+ 	</LinearLayout>
+</LinearLayout>
+    
+    
+
+    
+
+<!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/facebook.xml -->

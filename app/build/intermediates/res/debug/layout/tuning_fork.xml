@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/numberOctave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/letterNote"
+            android:layout_alignParentRight="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/letterNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/numberOctave"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/letterNote"
+            android:text="@string/note"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/textFrequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/frequence"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/numberFrequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/textFrequence"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:minWidth="80dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewHz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/numberFrequence"
+            android:layout_alignBottom="@id/numberFrequence"
+            android:layout_toRightOf="@id/numberFrequence"
+            android:text="@string/hertz"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/adjustment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/shiftOctave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/adjustOctave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/adjust_octave"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/octaveButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/previousOctave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/shift_down"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/nextOctave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/shift_up"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shiftNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/adjustNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/adjust_note"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/noteButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/previousNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/shift_down"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/nextNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/shift_up"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewAdjRefPitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/adjust_ref_pitch"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/PitchBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="300dp" >
+    </SeekBar>
+
+    <RelativeLayout
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Switch
+            android:id="@+id/switchButton"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/darkOrange"
+            android:textSize="18sp"
+            android:thumbTextPadding="25dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/help_tuning_fork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="Help"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</LinearLayout><!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/tuning_fork.xml -->

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/blue"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/blue"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Help"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Change game"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:text="Back to the score"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:background="@color/blue"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="Stop"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="Play"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/affiche"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="42dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout><!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/game_speed_level1.xml -->

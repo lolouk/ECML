@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <item name="blue" type="color">#00A2E8</item>
+       <item name="orange" type="color">#DE7835</item>  
+       <item name="bluec" type="color">#00e0ff</item>
+       <item name="white" type="color">#ffffff</item>
+       <item name="orangec" type="color">#ffffe0</item>
+       <item name="gray" type="color">#e0ffff</item>
+       
+       <item name="darkslateblue" type ="color">#483D8B</item>
+       <color name="Orange_DarkOrange">#FF8C00</color>
+       <color name="darkOrange">#D06402</color>
+       <color name="Red_OrangeRed">#FF4500</color>
+           
+           
+       <color name="PowderBlue">#B0E0E6</color>
+       <color name="LightSteelBlue">#B0C4DE</color>
+       <color name="LightSkyBlue">#87CEFA</color>     
+       <item name="LightBlue" type="color">#2060FF</item>     
+</resources>

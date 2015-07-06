@@ -1,0 +1,327 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:7:5
+	android:name
+		ADDED from AndroidManifest.xml:7:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:8:5
+	android:name
+		ADDED from AndroidManifest.xml:8:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:9:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.READ_CALENDAR
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-sdk
+ADDED from AndroidManifest.xml:16:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:18:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:17:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-feature#android.hardware.camera
+ADDED from AndroidManifest.xml:20:5
+	android:required
+		ADDED from AndroidManifest.xml:22:9
+	android:name
+		ADDED from AndroidManifest.xml:21:9
+uses-feature#android.hardware.camera.front
+ADDED from AndroidManifest.xml:23:5
+	android:required
+		ADDED from AndroidManifest.xml:25:9
+	android:name
+		ADDED from AndroidManifest.xml:24:9
+application
+ADDED from AndroidManifest.xml:27:5
+	android:label
+		ADDED from AndroidManifest.xml:31:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:29:9
+	android:icon
+		ADDED from AndroidManifest.xml:30:9
+	android:theme
+		ADDED from AndroidManifest.xml:32:9
+	android:name
+		ADDED from AndroidManifest.xml:28:9
+activity#com.ecml.ECMLActivity
+ADDED from AndroidManifest.xml:33:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:37:13
+	android:label
+		ADDED from AndroidManifest.xml:36:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:35:13
+	android:name
+		ADDED from AndroidManifest.xml:34:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:38:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:39:17
+	android:name
+		ADDED from AndroidManifest.xml:39:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:41:17
+	android:name
+		ADDED from AndroidManifest.xml:41:27
+activity#com.ecml.SheetMusicActivity
+ADDED from AndroidManifest.xml:44:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:47:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:46:13
+	android:name
+		ADDED from AndroidManifest.xml:45:13
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:48:13
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:49:17
+	android:name
+		ADDED from AndroidManifest.xml:49:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:51:17
+	android:name
+		ADDED from AndroidManifest.xml:51:27
+data
+ADDED from AndroidManifest.xml:53:17
+	android:mimeType
+		ADDED from AndroidManifest.xml:55:21
+	android:pathPattern
+		ADDED from AndroidManifest.xml:56:21
+	android:host
+		ADDED from AndroidManifest.xml:54:21
+	android:scheme
+		ADDED from AndroidManifest.xml:57:21
+activity#com.ecml.ChooseSongActivity
+ADDED from AndroidManifest.xml:60:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:62:13
+	android:name
+		ADDED from AndroidManifest.xml:61:13
+activity#com.ecml.FileBrowserActivity
+ADDED from AndroidManifest.xml:64:9
+	android:name
+		ADDED from AndroidManifest.xml:64:19
+activity#com.ecml.AllSongsActivity
+ADDED from AndroidManifest.xml:66:9
+	android:name
+		ADDED from AndroidManifest.xml:66:19
+activity#com.ecml.RecentSongsActivity
+ADDED from AndroidManifest.xml:68:9
+	android:name
+		ADDED from AndroidManifest.xml:68:19
+activity#com.ecml.SettingsActivity
+ADDED from AndroidManifest.xml:70:9
+	android:name
+		ADDED from AndroidManifest.xml:70:19
+activity#com.game.SpeedGamelvl
+ADDED from AndroidManifest.xml:72:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:74:13
+	android:name
+		ADDED from AndroidManifest.xml:73:13
+activity#com.game.SpeedGamelvl1
+ADDED from AndroidManifest.xml:76:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:78:13
+	android:name
+		ADDED from AndroidManifest.xml:77:13
+activity#com.game.SpeedGamelvln
+ADDED from AndroidManifest.xml:80:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:82:13
+	android:name
+		ADDED from AndroidManifest.xml:81:13
+activity#com.ecml.HelpActivity
+ADDED from AndroidManifest.xml:84:9
+	android:name
+		ADDED from AndroidManifest.xml:84:19
+activity#com.game.SpeedGameModeActivity
+ADDED from AndroidManifest.xml:86:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:88:13
+	android:name
+		ADDED from AndroidManifest.xml:87:13
+activity#com.calendar.CalendarActivity
+ADDED from AndroidManifest.xml:90:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:92:13
+	android:name
+		ADDED from AndroidManifest.xml:91:13
+activity#com.game.GameActivity
+ADDED from AndroidManifest.xml:94:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:96:13
+	android:name
+		ADDED from AndroidManifest.xml:95:13
+activity#com.sideActivities.AudioRecordingActivity
+ADDED from AndroidManifest.xml:98:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:100:13
+	android:name
+		ADDED from AndroidManifest.xml:99:13
+activity#com.sideActivities.VideoRecordingActivity
+ADDED from AndroidManifest.xml:102:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:104:13
+	android:name
+		ADDED from AndroidManifest.xml:103:13
+activity#com.sideActivities.TuningForkActivity
+ADDED from AndroidManifest.xml:106:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:108:13
+	android:name
+		ADDED from AndroidManifest.xml:107:13
+activity#com.metronome.MetronomeActivity
+ADDED from AndroidManifest.xml:110:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:112:13
+	android:name
+		ADDED from AndroidManifest.xml:111:13
+activity#com.sideActivities.YoutubeActivity
+ADDED from AndroidManifest.xml:114:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:116:13
+	android:name
+		ADDED from AndroidManifest.xml:115:13
+activity#com.game.ReadingGameModeActivity
+ADDED from AndroidManifest.xml:118:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:120:13
+	android:name
+		ADDED from AndroidManifest.xml:119:13
+activity#com.game.ReadingGameBeginner
+ADDED from AndroidManifest.xml:122:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:124:13
+	android:name
+		ADDED from AndroidManifest.xml:123:13
+activity#com.game.ReadingGameNormal
+ADDED from AndroidManifest.xml:126:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:128:13
+	android:name
+		ADDED from AndroidManifest.xml:127:13
+activity#com.calendar.CalendarPreferencesActivity
+ADDED from AndroidManifest.xml:130:9
+	android:name
+		ADDED from AndroidManifest.xml:130:19
+activity#com.calendar.CalendarAddEventsActivity
+ADDED from AndroidManifest.xml:132:9
+	android:name
+		ADDED from AndroidManifest.xml:132:19
+activity#com.calendar.CalendarRehearsalProgramActivity
+ADDED from AndroidManifest.xml:134:9
+	android:name
+		ADDED from AndroidManifest.xml:134:19
+activity#com.calendar.CalendarDisplayActivity
+ADDED from AndroidManifest.xml:136:9
+	android:name
+		ADDED from AndroidManifest.xml:136:19
+activity#com.ecml.FacebookActivity
+ADDED from AndroidManifest.xml:138:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:140:13
+	android:name
+		ADDED from AndroidManifest.xml:139:13
+activity#com.login.Login
+ADDED from AndroidManifest.xml:142:9
+	android:name
+		ADDED from AndroidManifest.xml:142:19
+activity#com.login.SignUp
+ADDED from AndroidManifest.xml:144:9
+	android:name
+		ADDED from AndroidManifest.xml:144:19
+activity#com.androidim.FriendList
+ADDED from AndroidManifest.xml:149:9
+	android:name
+		ADDED from AndroidManifest.xml:149:19
+intent-filter#android.intent.action.MAIN+android.intent.category.NORMAL
+ADDED from AndroidManifest.xml:150:13
+category#android.intent.category.NORMAL
+ADDED from AndroidManifest.xml:154:17
+	android:name
+		ADDED from AndroidManifest.xml:154:27
+service#com.androidim.services.IMService
+ADDED from AndroidManifest.xml:159:9
+	android:name
+		ADDED from AndroidManifest.xml:159:18
+activity#com.androidim.Login
+ADDED from AndroidManifest.xml:162:9
+	android:name
+		ADDED from AndroidManifest.xml:162:19
+activity#com.androidim.Profil
+ADDED from AndroidManifest.xml:171:9
+	android:name
+		ADDED from AndroidManifest.xml:171:19
+activity#com.ecml.StudentActivities
+ADDED from AndroidManifest.xml:173:9
+	android:name
+		ADDED from AndroidManifest.xml:173:19
+activity#com.androidim.AddFriend
+ADDED from AndroidManifest.xml:175:9
+	android:name
+		ADDED from AndroidManifest.xml:175:19
+activity#com.androidim.DeleteFriend
+ADDED from AndroidManifest.xml:177:9
+	android:name
+		ADDED from AndroidManifest.xml:177:19
+activity#com.androidim.Messaging
+ADDED from AndroidManifest.xml:179:9
+	android:name
+		ADDED from AndroidManifest.xml:179:19
+activity#com.androidim.SignUp
+ADDED from AndroidManifest.xml:188:9
+	android:name
+		ADDED from AndroidManifest.xml:188:19
+activity#com.androidim.UnApprovedFriendList
+ADDED from AndroidManifest.xml:197:9
+	android:name
+		ADDED from AndroidManifest.xml:197:19
+activity#com.login.ForgottenPasswordActivity
+ADDED from AndroidManifest.xml:199:9
+	android:name
+		ADDED from AndroidManifest.xml:199:19
+activity#com.game.MusicalEarGameModeActivity
+ADDED from AndroidManifest.xml:201:9
+	android:name
+		ADDED from AndroidManifest.xml:201:19
+activity#com.game.TechniqueActivity
+ADDED from AndroidManifest.xml:202:9
+	android:name
+		ADDED from AndroidManifest.xml:202:19

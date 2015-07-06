@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/blue"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Help"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+        
+        <Button
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Change game"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+        
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="80dp"
+            android:text="Back to the score"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </Button>
+    </LinearLayout>
+
+   
+    
+</LinearLayout><!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/game_technique.xml -->

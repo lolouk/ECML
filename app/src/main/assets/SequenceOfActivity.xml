@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sequenceOfactivity SYSTEM "SequenceOfActivity.dtd" >
+<sequenceOfactivity>
+    <activity type="PA" number="0">
+        <duration>60</duration>
+        <song>hello</song>
+        <tempo>250</tempo>
+        <gameLevel>2</gameLevel>
+    </activity>
+</sequenceOfactivity>

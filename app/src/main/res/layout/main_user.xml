@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Holo.Light"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:id="@+id/sequenceOfActivities"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/orange"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/seqOfActivities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/choose_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/scorebtn" />
+
+                <TextView
+                    android:id="@+id/choose_song_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_song" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/messenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/messengerbtn" />
+
+                <TextView
+                    android:id="@+id/messenger_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/messenger" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendarbtn" />
+
+                <TextView
+                    android:id="@+id/calendar_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calendar_str" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtubebtn" />
+
+                <TextView
+                    android:id="@+id/youtube_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/youtube" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/audiorecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/audiobtn" />
+
+                <TextView
+                    android:id="@+id/audiorecording_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/audio" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/metronome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/metronomebtn" />
+
+                <TextView
+                    android:id="@+id/metronome_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/metronome" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/videorecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/videobtn" />
+
+                <TextView
+                    android:id="@+id/videorecording_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/tuning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tuningbtn" />
+
+                <TextView
+                    android:id="@+id/tuning_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuning" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gamebtn" />
+
+                <TextView
+                    android:id="@+id/game_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_str" />
+            </LinearLayout>
+             
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2" >
+                
+                <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/communication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/communication" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>

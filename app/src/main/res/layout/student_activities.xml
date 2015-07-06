@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+	<TextView
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:text="@string/studentName"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/Red_OrangeRed" />
+   
+     
+    <EditText android:id="@+id/studentName"
+		android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:password="false" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+          
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="15dip"
+	        android:text="@string/chooseActivity"
+	        android:textSize="15sp"
+	        android:textStyle="italic"
+	        android:textColor="@color/Red_OrangeRed"
+	        android:orientation ="horizontal" />
+	    
+		<Spinner
+			android:prompt="@string/select"
+		    android:id="@+id/activities_spinner"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/time"
+	        android:textSize="15sp"
+	        android:textStyle="italic"
+	        android:paddingRight="15dip"
+	        android:textColor="@color/Red_OrangeRed"
+	        android:orientation ="horizontal" />
+
+		<Spinner
+			android:id="@+id/duration_spinner"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tempo"
+	        android:textSize="15sp"
+	        android:textStyle="italic"
+	        android:paddingRight="15dip"
+	        android:textColor="@color/Red_OrangeRed"
+	        android:orientation ="horizontal" />
+
+		<EditText
+			android:id="@+id/tempo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:editable="true"
+			android:text="60"/>
+
+    	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/songs_list"
+			android:textSize="15sp"
+			android:textStyle="italic"
+			android:paddingRight="15dip"
+			android:textColor="@color/Red_OrangeRed"
+			android:orientation ="horizontal" />
+	    
+	    <Button
+	        android:id="@+id/song_choice"
+	    	android:layout_width="250dip"
+	        android:layout_height="wrap_content"
+			android:text="Choose a song"
+	        android:password="false" />
+
+		<TextView
+	        android:id="@+id/song_title"
+		   	android:layout_width="250dip"
+		    android:layout_height="wrap_content"
+		    android:singleLine="true"
+		    android:password="false" />
+
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/game_level"
+	        android:textSize="15sp"
+	        android:textStyle="italic"
+	        android:paddingRight="15dip"
+	        android:textColor="@color/Red_OrangeRed"
+			android:orientation ="horizontal" />
+	    
+	    <EditText 
+	        android:id="@+id/game_level"
+	    	android:layout_width="250dip"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:password="false" />
+
+		<Button
+	    	android:id="@+id/sendBtn"
+	   		android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="top"
+        	android:textStyle="italic"
+        	android:textColor="@color/Red_OrangeRed"
+		 	android:text="Send"/>
+
+	</LinearLayout>
+</LinearLayout>
+	    

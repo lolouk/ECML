@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <!ELEMENT sequenceOfactivity (activity*)>
+    <!ELEMENT activity (duration, song, tempo, gameLevel, finished, countdown)>
+    <!ATTLIST activity
+        type (PI|S|R|C|PA|W) #REQUIRED
+        number CDATA #IMPLIED>
+    <!ELEMENT duration (#PCDATA)>
+    <!ELEMENT song (#PCDATA)>
+    <!ELEMENT tempo (#PCDATA)>
+    <!ELEMENT gameLevel (#PCDATA)>
+    <!ELEMENT active (#PCDATA)>
+    <!ELEMENT finished (#PCDATA)>
+    <!ELEMENT countdown (#PCDATA)>
+

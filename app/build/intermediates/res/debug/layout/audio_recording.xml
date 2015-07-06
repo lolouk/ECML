@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/audiobtn" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/AudioRecording"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:textColor="#ffffff"
+                android:textSize="25sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/startAudioRecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/record" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/stopAudioRecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/recordstop" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/AudioReplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Replay"
+                android:textColor="#ffffff"
+                android:textSize="25sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/replayAudioRecording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/recordplay"
+                    android:layout_marginRight="30dp" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/pauseReplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/recordpause" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/ECML/ECML/app/src/main/res/layout/audio_recording.xml -->
