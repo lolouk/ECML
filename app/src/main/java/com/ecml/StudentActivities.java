@@ -81,9 +81,9 @@ public class StudentActivities extends Activity {
 		song_choice.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Intent intent = new Intent(getBaseContext(),ChooseSongActivity.class);
-				intent.putExtra(ChooseSongActivity.mode,"studentActivities");
-				startActivityForResult(intent,REQUEST_CODE);
+				ECML.intent = new Intent(getBaseContext(),ChooseSongActivity.class);
+				ECML.intent.putExtra(ChooseSongActivity.mode,"studentActivities");
+				startActivityForResult(ECML.intent, REQUEST_CODE);
 			}
 		});
 
@@ -124,6 +124,8 @@ public class StudentActivities extends Activity {
                 duration = Integer.parseInt(adapter_duration.getItem(index2).toString())*60000; //convert in milliseconds
 
                 //Get the song of the activity
+				Button btn = (Button) findViewById(R.id.song_choice);
+				song = String.valueOf(btn.getText());
 
                 //Get the tempo
                 //TODO : min and max values
@@ -174,8 +176,8 @@ public class StudentActivities extends Activity {
 			case REQUEST_CODE: {
 				if (resultCode == Activity.RESULT_OK) {
 					String newText = data.getStringExtra("song");
-					TextView text = (TextView) findViewById(R.id.song_title);
-					text.setText(newText);
+					Button btn = (Button) findViewById(R.id.song_choice);
+					btn.setText(newText);
 				}
 				break;
 			}

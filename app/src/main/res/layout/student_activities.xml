@@ -90,12 +90,6 @@
 			android:text="Choose a song"
 	        android:password="false" />
 
-		<TextView
-	        android:id="@+id/song_title"
-		   	android:layout_width="250dip"
-		    android:layout_height="wrap_content"
-		    android:singleLine="true"
-		    android:password="false" />
 
 		<TextView
 	        android:layout_width="wrap_content"

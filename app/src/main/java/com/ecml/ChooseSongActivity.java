@@ -80,7 +80,6 @@ public class ChooseSongActivity extends BaseTabActivity implements OnTabChangeLi
                 .setContent(new Intent(this, FileBrowserActivity.class)));
         
         tabHost.setOnTabChangedListener(this);
-
     }
     
     /** Update Action bar Title when changing Tab */
@@ -141,7 +140,8 @@ public class ChooseSongActivity extends BaseTabActivity implements OnTabChangeLi
                 finish();
 			}
 			
-		} else if (mode.equals("reading")) {
+		}
+        else if (mode.equals("reading")) {
 			if (lvl == 1) {
 				intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, ReadingGameBeginner.class);
 				intent.putExtra(ReadingGameBeginner.MidiTitleID, file.toString());
@@ -157,15 +157,16 @@ public class ChooseSongActivity extends BaseTabActivity implements OnTabChangeLi
                 finish();
 			}
 			
-		} else if (mode.equals("chooseSong")) {
+		}
+        else if (mode.equals("chooseSong")) {
 			intent = new Intent(Intent.ACTION_VIEW, file.getUri(), this, SheetMusicActivity.class);
             intent.putExtra("number",number);
             startActivity(intent);
             finish();
-		} else if (mode.equals("studentActivities")) {
-            Log.d("ChooseSongActivity:doOp","here");
+		}
+        else if (mode.equals("studentActivities")) {
             intent = new Intent();
-            intent.putExtra("song", file.getUri().toString());
+            intent.putExtra("song", file.toString());
             setResult(Activity.RESULT_OK, intent);
             finish();
         }
