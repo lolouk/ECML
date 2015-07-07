@@ -304,7 +304,7 @@ public class ECMLActivity extends Activity {
 			alert.setButton(DialogInterface.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialogInterface, int i) {
-					finish();
+					finishAffinity();
 				}
 			});
 			alert.setButton(DialogInterface.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {

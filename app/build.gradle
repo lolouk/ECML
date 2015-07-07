@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.ecml"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 17
     }
 

@@ -19,6 +19,12 @@
         <item>3000</item>
         <item>4000</item>
         <item>5000</item>
+    </string-array><string-array name="combine_interval_values">
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
     </string-array><string-array name="transpose_values">
         <item>12</item>
         <item>11</item>
@@ -45,12 +51,6 @@
         <item>-10</item>
         <item>-11</item>
         <item>-12</item>
-    </string-array><string-array name="combine_interval_values">
-        <item>20</item>
-        <item>40</item>
-        <item>60</item>
-        <item>80</item>
-        <item>100</item>
     </string-array><string-array name="show_note_letter_entries">
         <item>None</item>
         <item>Letters (A, A#)</item>
@@ -58,6 +58,13 @@
         <item>Movable Do-Re-Mi</item>
         <item>Fixed Numbers</item>
         <item>Movable Numbers</item>
+    </string-array><string-array name="show_note_letter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array><string-array name="key_signature_values">
         <item>-1</item>
         <item>0</item>
@@ -72,13 +79,6 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
-    </string-array><string-array name="show_note_letter_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
     </string-array><string-array name="delay_entries">
         <item>1 Second</item>
         <item>2 Seconds</item>
@@ -117,16 +117,16 @@
         <item>Down 10 notes</item>
         <item>Down 11 notes</item>
         <item>Down 12 notes</item>
-    </string-array></file><file path="D:\ECML\ECML\app\src\main\res\values\colors.xml" qualifiers=""><color name="PowderBlue">#B0E0E6</color><item name="blue" type="color">#00A2E8</item><color name="Red_OrangeRed">#FF4500</color><color name="LightSkyBlue">#87CEFA</color><item name="darkslateblue" type="color">#483D8B</item><color name="darkOrange">#D06402</color><item name="gray" type="color">#e0ffff</item><item name="orangec" type="color">#ffffe0</item><item name="bluec" type="color">#00e0ff</item><item name="orange" type="color">#DE7835</item><color name="Orange_DarkOrange">#FF8C00</color><color name="LightSteelBlue">#B0C4DE</color><item name="white" type="color">#ffffff</item><item name="LightBlue" type="color">#2060FF</item></file><file path="D:\ECML\ECML\app\src\main\res\values\colors_ecmltheme.xml" qualifiers=""><color name="ecmltheme_color">#de7835</color></file><file path="D:\ECML\ECML\app\src\main\res\values\dimens_ecmltheme.xml" qualifiers=""><dimen name="tab_host_default_height">48dp</dimen></file><file path="D:\ECML\ECML\app\src\main\res\values\strings.xml" qualifiers=""><string name="tuning">Tuning fork</string><string name="lastName">Last Name</string><string name="friend_deleted">Your friend has been deleted</string><string name="OK">OK</string><string name="main_menu">Main Menu</string><string name="username_and_password_length_short">Username and password length must be at least 5</string><string name="show_note_colors">Show a different color for each note</string><string name="play_measures_in_loop_start">Start Measure</string><string name="frequence">Frequence : </string><string-array name="questions_array">
+    </string-array></file><file path="D:\ECML\ECML\app\src\main\res\values\colors.xml" qualifiers=""><color name="PowderBlue">#B0E0E6</color><item name="blue" type="color">#00A2E8</item><color name="Red_OrangeRed">#FF4500</color><color name="LightSkyBlue">#87CEFA</color><item name="darkslateblue" type="color">#483D8B</item><color name="darkOrange">#D06402</color><item name="gray" type="color">#e0ffff</item><item name="orangec" type="color">#ffffe0</item><item name="bluec" type="color">#00e0ff</item><item name="orange" type="color">#DE7835</item><color name="Orange_DarkOrange">#FF8C00</color><color name="LightSteelBlue">#B0C4DE</color><item name="white" type="color">#ffffff</item><item name="LightBlue" type="color">#2060FF</item></file><file path="D:\ECML\ECML\app\src\main\res\values\colors_ecmltheme.xml" qualifiers=""><color name="ecmltheme_color">#de7835</color></file><file path="D:\ECML\ECML\app\src\main\res\values\dimens_ecmltheme.xml" qualifiers=""><dimen name="tab_host_default_height">48dp</dimen></file><file path="D:\ECML\ECML\app\src\main\res\values\strings.xml" qualifiers=""><string name="tuning">Tuning fork</string><string name="lastName">Last Name</string><string name="friend_deleted">Your friend has been deleted</string><string name="OK">OK</string><string name="main_menu">Main Menu</string><string name="play_measures_in_loop_start">Start Measure</string><string name="show_note_colors">Show a different color for each note</string><string name="username_and_password_length_short">Username and password length must be at least 5</string><string name="frequence">Frequence : </string><string-array name="questions_array">
         <item> What was your childhood nickname? </item>
         <item>What time of the day were you born?</item>
         <item>What was your dream job as a child?</item>
         <item>What was your maternal grandfatherâ€™s first name?</item>
     </string-array><string name="game_str">Play game</string><string name="friendlist">FRIEND LIST</string><string name="howtoplay">How to play the game</string><string name="shift_down">Shift Down</string><string name="firstName">First Name</string><string name="password">Password:</string><string name="restore_defaults">Restore Default Settings</string><string name="signup_username_crashed">Your username have been already taken, please try another username</string><string name="user_offline">This user is offline</string><string name="help_tuning_fork">Select a note and press the toggle button to hear it. The note played is displayed at the top-right hand corner.
         \nPress Adjust Octave to get back to Octave number 4.
-        \nPress Adjust Note to get back to the note A of the current Octave.</string><string name="back_to_score">Back to the Score</string><string name="chooseActivity">Choose an Activity</string><string name="finish"> FINISH!</string><string name="scan_files_str">Scan for MIDI Files</string><string name="help_musical_ear">"Hear the notes and then find them. The goal is to find the maximum of right notes."</string><string name="choose_end_measure">Choose the End Measure</string><string name="sheet_prefs_title">Sheet Music Preferences</string><string name="play_measures_in_loop">Play Measures in a Loop</string><string name="audio_format_str">Audio Format</string><string name="stopmetronome">Stop metronome</string><string name="choose_transpose">Choose the Transposition</string><string name="speed_game_reading">\nAt level 1, the game is waiting for you to play the right note. You need to scroll down or up the sheetmusic yourself. You can highlight the note yourself too.\n\nAt level 2, you have to play the note when it is highlight. If you play the good note at the right time you get one point.\nAt the end of the song, you can see how many notes you play right.\n\nLevels 3 and 4 work the same way are level 2 but are harder. </string><string name="not_connected_to_service">Not connected to the service and 
+        \nPress Adjust Note to get back to the note A of the current Octave.</string><string name="back_to_score">Back to the Score</string><string name="chooseActivity">Choose an Activity</string><string name="finish"> FINISH!</string><string name="scan_files_str">Scan for MIDI Files</string><string name="choose_end_measure">Choose the End Measure</string><string name="help_musical_ear">"Hear the notes and then find them. The goal is to find the maximum of right notes."</string><string name="sheet_prefs_title">Sheet Music Preferences</string><string name="play_measures_in_loop">Play Measures in a Loop</string><string name="audio_format_str">Audio Format</string><string name="stopmetronome">Stop metronome</string><string name="choose_transpose">Choose the Transposition</string><string name="speed_game_reading">\nAt level 1, the game is waiting for you to play the right note. You need to scroll down or up the sheetmusic yourself. You can highlight the note yourself too.\n\nAt level 2, you have to play the note when it is highlight. If you play the good note at the right time you get one point.\nAt the end of the song, you can see how many notes you play right.\n\nLevels 3 and 4 work the same way are level 2 but are harder. </string><string name="not_connected_to_service">Not connected to the service and 
 	this is not supposed to happened so please inform this situation to 
-	ahmetmermerkaya@hotmail.com</string><string name="youtube_str">Go on Youtube</string><string name="add">Add</string><string name="adjust_octave">Adjust Octave</string><string name="local_service_started">App service started</string><string name="choose_song">Choose Song</string><string name="messenger">ECML Messenger</string><string name="request_sent">Your request has been sent</string><string name="action_settings">Settings</string><string name="songs_list">List of the songs</string><string name="play_last_str">Play last record</string><string name="speed_game_help">How to play the SpeedGame</string><string name="help_speed" ns1:id="@+id/help_speed" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content">Play the notes with the good rythm.</string><string name="time_signature">Time Signature</string><string name="startmetronome">Start metronome</string><string name="cancel">Cancel</string><string name="signup_successfull">Your registration is completed successfully,\n you can login now </string><string name="combine_interval_summary">Notes within the given interval (in milliseconds) are combined into a single chord</string><string name="set_all_to_piano">Set All Instruments to Piano</string><string name="metronome">Metronome</string><string-array name="instruments_array">
+	ahmetmermerkaya@hotmail.com</string><string name="youtube_str">Go on Youtube</string><string name="add">Add</string><string name="adjust_octave">Adjust Octave</string><string name="local_service_started">App service started</string><string name="choose_song">Choose Song</string><string name="request_sent">Your request has been sent</string><string name="messenger">ECML Messenger</string><string name="songs_list">List of the songs</string><string name="action_settings">Settings</string><string name="play_last_str">Play last record</string><string name="speed_game_help">How to play the SpeedGame</string><string ns1:id="@+id/help_speed" ns1:layout_height="wrap_content" ns1:layout_width="wrap_content" name="help_speed">Play the notes with the good rythm.</string><string name="time_signature">Time Signature</string><string name="startmetronome">Start metronome</string><string name="cancel">Cancel</string><string name="signup_successfull">Your registration is completed successfully,\n you can login now </string><string name="combine_interval_summary">Notes within the given interval (in milliseconds) are combined into a single chord</string><string name="set_all_to_piano">Set All Instruments to Piano</string><string name="metronome">Metronome</string><string-array name="instruments_array">
         <item>Piano</item>
         <item>Violin</item>
         <item>Guitar</item>
@@ -137,7 +137,7 @@
         <item> Play instrument with the piano </item>
         <item> Work difficult parts</item>
     </string-array><string name="add_new_friend">Add new friend</string><string name="exit_application">Exit</string><string name="choose_notation">Choose the Notation</string><string name="app_name">ECML</string><string name="right_hand_color">Right Hand Color</string><string name="show_lyrics">Show Lyrics</string><string name="tempo">Default Tempo</string><string name="wrong_answer">Your answer is wrong ! </string><string name="start_recording_str">Start recording</string><string name="browse_files_str">Browse for MIDI Files</string><string name="choose_key">Choose the Key Signature</string><string name="help_reading">Read the notes and then find them. The goal is to find the maximum of right notes.</string><string name="user_authenticated_success">User authenticated successfully! </string><string name="facebook">Facebook</string><string name="save_images_str">Save As Images</string><string name="hertz">Hz</string><string name="signup_type_same_password_in_password_fields">Type same password in password fields</string><string name="choose_combine_interval">Choose the Combine Interval</string><string name="note">Note : </string><string name="left_hand_color">Left Hand Color</string><string name="start">Start</string><string name="make_sure_username_and_password_correct">Please make sure that
-	your username and password correct</string><string name="save_images_descr_str">Save the sheet music as images, in the directory /ECML/MusicSheets, with the following filename</string><string name="adjust_ref_pitch">Adjust Reference Pitch</string><string name="choose_title_str">Choose the title</string><string name="username">Username:</string><string name="fill_both_username_and_password">Please fill both username and password</string><string name="gmail">Gmail</string><string name="audio">Audio Recording</string><string name="not_connected_to_network">There is no available connected network</string><string name="no_friend">You have no friend,\n you can add new friends by menu</string><string name="invitation">FRIEND\'S INVITATION</string><string name="studentName">Student name</string><string name="stop">Stop</string><string name="combine_interval">Combine Interval</string><string name="scan_button_title">Scan SD Card for MIDI files</string><string name="video">Video Recording</string><string name="select_tracks_to_display">Select Tracks to Display</string><string name="shift_up">Shift Up</string><string name="help_technique">The rhythm of the song changed. Practise the song with the new rhythm.</string><string name="choose_delay">Choose delay</string><string name="local_service_stopped">App service stopped</string><string name="signup_failed">Sign up failed because of unknown reason</string><string name="ProfilCompleted"> Profil completed successfully</string><string name="communication">Communication</string><string name="clickToSignUp"><u><b><i> Sign Up Here</i></b></u></string><string name="birthdate">Birthdate</string><string name="show_note_letters">Show Note Letters</string><string name="time">Duration of the activity</string><string name="groupList"> GROUP LIST</string><string name="scroll_vertically">Scroll Vertically</string><string name="help_str">Help</string><string name="choose_time_signature">Choose the Time Signature</string><string name="choose_start_measure">Choose the start measure</string><string name="upload_youtube">Upload a video on Youtube</string><string name="security_question">Choose a security question</string><string name="delay">Delay</string><string name="delete_friend"> Delete Friend</string><string name="split_to_two_staffs_summary">Split the single track into two staffs (left hand and right hand staffs).</string><string name="local_service_connected">local_service_connected</string><string name="new_friend_request_exist">New friend request</string><string name="set_all_tracks">Display and Unmute All Tracks</string><string name="signup_fill_all_fields">Please fill all fields</string><string name="show_measures">Show Measure Numbers</string><string name="select_instruments_per_track">Select Instruments For Each Track</string><string name="how_to_use_tuning_fork">How to use the Tuning Fork</string><string name="game_level">Game level</string><string name="recordscore">Record with scores</string><string name="transpose">Transpose Notes</string><string name="split_to_two_staffs">Split Track Into Two Staffs</string><string name="pausereplay">Pause replay</string><string name="select_tracks_to_mute">Select Tracks to Mute</string><string name="combine_to_two_staffs_summary">Combine all the tracks into two staffs (left hand and right hand staffs). </string><string name="email">E-mail</string><string-array name="duration_array">
+	your username and password correct</string><string name="save_images_descr_str">Save the sheet music as images, in the directory /ECML/MusicSheets, with the following filename</string><string name="adjust_ref_pitch">Adjust Reference Pitch</string><string name="choose_title_str">Choose the title</string><string name="fill_both_username_and_password">Please fill both username and password</string><string name="username">Username:</string><string name="gmail">Gmail</string><string name="audio">Audio Recording</string><string name="not_connected_to_network">There is no available connected network</string><string name="no_friend">You have no friend,\n you can add new friends by menu</string><string name="invitation">FRIEND\'S INVITATION</string><string name="studentName">Student name</string><string name="combine_interval">Combine Interval</string><string name="stop">Stop</string><string name="scan_button_title">Scan SD Card for MIDI files</string><string name="video">Video Recording</string><string name="select_tracks_to_display">Select Tracks to Display</string><string name="shift_up">Shift Up</string><string name="help_technique">The rhythm of the song changed. Practise the song with the new rhythm.</string><string name="choose_delay">Choose delay</string><string name="signup_failed">Sign up failed because of unknown reason</string><string name="local_service_stopped">App service stopped</string><string name="ProfilCompleted"> Profil completed successfully</string><string name="communication">Communication</string><string name="clickToSignUp"><u><b><i> Sign Up Here</i></b></u></string><string name="birthdate">Birthdate</string><string name="time">Duration of the activity</string><string name="show_note_letters">Show Note Letters</string><string name="groupList"> GROUP LIST</string><string name="choose_time_signature">Choose the Time Signature</string><string name="help_str">Help</string><string name="scroll_vertically">Scroll Vertically</string><string name="choose_start_measure">Choose the start measure</string><string name="delay">Delay</string><string name="security_question">Choose a security question</string><string name="upload_youtube">Upload a video on Youtube</string><string name="delete_friend"> Delete Friend</string><string name="split_to_two_staffs_summary">Split the single track into two staffs (left hand and right hand staffs).</string><string name="local_service_connected">local_service_connected</string><string name="new_friend_request_exist">New friend request</string><string name="set_all_tracks">Display and Unmute All Tracks</string><string name="show_measures">Show Measure Numbers</string><string name="signup_fill_all_fields">Please fill all fields</string><string name="select_instruments_per_track">Select Instruments For Each Track</string><string name="how_to_use_tuning_fork">How to use the Tuning Fork</string><string name="game_level">Game level</string><string name="split_to_two_staffs">Split Track Into Two Staffs</string><string name="transpose">Transpose Notes</string><string name="recordscore">Record with scores</string><string name="pausereplay">Pause replay</string><string name="select_tracks_to_mute">Select Tracks to Mute</string><string name="combine_to_two_staffs_summary">Combine all the tracks into two staffs (left hand and right hand staffs). </string><string name="email">E-mail</string><string-array name="duration_array">
         <item>1</item>
         <item>2</item>
         <item>5</item>
@@ -160,12 +160,12 @@
         <item name="android:background">@android:color/transparent</item>
     </style></file><file path="D:\ECML\ECML\app\src\main\res\values\styles_ecmltheme (2).xml" qualifiers=""><style name="ButtonECMLTheme" parent="android:Widget.Holo.Light.Button">
 	  <item name="android:background">@drawable/ecmltheme_btn_default_holo_light</item>
-  </style><style name="AutoCompleteTextViewECMLTheme" parent="android:Widget.Holo.Light.AutoCompleteTextView">
-      <item name="android:dropDownSelector">@drawable/ecmltheme_list_selector_holo_light</item>
-	    <item name="android:background">@drawable/ecmltheme_edit_text_holo_light</item>
   </style><style name="RatingBarSmallECMLTheme" parent="android:Widget.Holo.Light.RatingBar.Small">
       <item name="android:progressDrawable">@drawable/ecmltheme_ratingbar_small_holo_light</item>
       <item name="android:indeterminateDrawable">@drawable/ecmltheme_ratingbar_small_holo_light</item>
+  </style><style name="AutoCompleteTextViewECMLTheme" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/ecmltheme_list_selector_holo_light</item>
+	    <item name="android:background">@drawable/ecmltheme_edit_text_holo_light</item>
   </style><style name="TabECMLTheme">
       <item name="android:gravity">center_horizontal</item>
       <item name="android:paddingLeft">16dip</item>
@@ -174,23 +174,26 @@
       <item name="android:layout_width">0dip</item>
       <item name="android:layout_weight">1</item>
       <item name="android:minWidth">80dip</item>
+  </style><style name="ToggleECMLTheme" parent="android:Widget.Holo.Light.Button.Toggle">
+      <item name="android:background">@drawable/ecmltheme_btn_toggle_holo_light</item>
   </style><style name="SpinnerECMLTheme" parent="android:Widget.Holo.Light.Spinner">
       <item name="android:background">@drawable/ecmltheme_spinner_background_holo_light</item>
       <item name="android:dropDownSelector">@drawable/ecmltheme_list_selector_holo_light</item>
-  </style><style name="ToggleECMLTheme" parent="android:Widget.Holo.Light.Button.Toggle">
-      <item name="android:background">@drawable/ecmltheme_btn_toggle_holo_light</item>
   </style><style name="ProgressBarECMLTheme" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
       <item name="android:progressDrawable">@drawable/ecmltheme_progress_horizontal_holo_light</item>
       <item name="android:indeterminateDrawable">@drawable/ecmltheme_progress_indeterminate_horizontal_holo_light</item>
   </style><style name="ImageButtonECMLTheme" parent="android:Widget.Holo.Light.ImageButton">
 	  <item name="android:background">@drawable/ecmltheme_btn_default_holo_light</item>
+  </style><style name="RatingBarECMLTheme" parent="android:Widget.Holo.Light.RatingBar">
+      <item name="android:progressDrawable">@drawable/ecmltheme_ratingbar_full_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/ecmltheme_ratingbar_full_holo_light</item>
   </style><style name="SeekBarECMLTheme" parent="android:Widget.Holo.Light.SeekBar">
       <item name="android:progressDrawable">@drawable/ecmltheme_scrubber_progress_horizontal_holo_light</item>
       <item name="android:indeterminateDrawable">@drawable/ecmltheme_scrubber_progress_horizontal_holo_light</item>
       <item name="android:thumb">@drawable/ecmltheme_scrubber_control_selector_holo_light</item>
-  </style><style name="RatingBarECMLTheme" parent="android:Widget.Holo.Light.RatingBar">
-      <item name="android:progressDrawable">@drawable/ecmltheme_ratingbar_full_holo_light</item>
-      <item name="android:indeterminateDrawable">@drawable/ecmltheme_ratingbar_full_holo_light</item>
+  </style><style name="RatingBarBigECMLTheme" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/ecmltheme_ratingbar_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/ecmltheme_ratingbar_holo_light</item>
   </style><style name="TabTextECMLTheme">
 	  <item name="android:textColor">#000000</item>
       <item name="android:textSize">12sp</item>
@@ -199,13 +202,10 @@
       <item name="android:ellipsize">marquee</item>
       <item name="android:maxLines">2</item>
       <item name="android:maxWidth">180dip</item>
-  </style><style name="RatingBarBigECMLTheme" parent="android:Widget.Holo.Light.RatingBar.Indicator">
-      <item name="android:progressDrawable">@drawable/ecmltheme_ratingbar_holo_light</item>
-      <item name="android:indeterminateDrawable">@drawable/ecmltheme_ratingbar_holo_light</item>
-  </style></file><file path="D:\ECML\ECML\app\src\main\res\values\styles_ecmltheme.xml" qualifiers=""><style name="ActionBarTabStyle.Ecmltheme" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
-        <item name="android:background">@drawable/tab_indicator_ab_ecmltheme</item>
-    </style><style name="ProgressBar.Ecmltheme" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+  </style></file><file path="D:\ECML\ECML\app\src\main\res\values\styles_ecmltheme.xml" qualifiers=""><style name="ProgressBar.Ecmltheme" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_ecmltheme</item>
+    </style><style name="ActionBarTabStyle.Ecmltheme" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_ecmltheme</item>
     </style><style name="DropDownListView.Ecmltheme" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_ecmltheme</item>
     </style><style name="ActionBar.Solid.Ecmltheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
@@ -216,6 +216,10 @@
     </style><style name="Theme.Ecmltheme.Widget" parent="@android:style/Theme.Holo">
         <item name="android:popupMenuStyle">@style/PopupMenu.Ecmltheme</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Ecmltheme</item>
+    </style><style name="DropDownNav.Ecmltheme" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_ecmltheme</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_ecmltheme</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_ecmltheme</item>
     </style><style name="Theme.Ecmltheme" parent="@style/_ECMLTheme">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_ecmltheme</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Ecmltheme</item>
@@ -228,10 +232,6 @@
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ecmltheme</item>
         
         
-    </style><style name="DropDownNav.Ecmltheme" parent="@android:style/Widget.Holo.Light.Spinner">
-        <item name="android:background">@drawable/spinner_background_ab_ecmltheme</item>
-        <item name="android:popupBackground">@drawable/menu_dropdown_panel_ecmltheme</item>
-        <item name="android:dropDownSelector">@drawable/selectable_background_ecmltheme</item>
     </style><style name="ActionBar.Transparent.Ecmltheme" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@drawable/ab_transparent_ecmltheme</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Ecmltheme</item>

@@ -280,9 +280,6 @@ public class ReadWriteXMLFile {
                         boolean active = Boolean.parseBoolean(element.getElementsByTagName("active").item(0).getTextContent());
                         boolean finished = Boolean.parseBoolean(element.getElementsByTagName("finished").item(0).getTextContent());
                         int countdown = Integer.parseInt(element.getElementsByTagName("countdown").item(0).getTextContent());
-						Log.d("ReadWriteXMLFile:ReadAc","number =" + String.valueOf(num));
-						Log.d("ReadWriteXMLFile:ReadAc","active = " + String.valueOf(active));
-						Log.d("ReadWriteXMLFile:ReadAc","finished = " + String.valueOf(finished));
 						return new ActivityParameters(number, type, duration, song, tempo, active, finished, countdown);
                     }
                 }
