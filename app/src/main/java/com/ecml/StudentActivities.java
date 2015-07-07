@@ -3,6 +3,7 @@ package com.ecml;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -135,6 +137,9 @@ public class StudentActivities extends Activity {
 					}
 				}
 				ECMLActivity.nbActivities++;
+
+				Toast toast = Toast.makeText(getBaseContext(), "Activity added", Toast.LENGTH_SHORT);
+				toast.show();
 			}
 		});
 	}
