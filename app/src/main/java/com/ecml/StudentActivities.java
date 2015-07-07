@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,6 +64,9 @@ public class StudentActivities extends Activity {
         final EditText tempoValue = (EditText) findViewById(R.id.tempo);
 		Button send = (Button) findViewById(R.id.sendBtn);
 		Button song_choice = (Button) findViewById(R.id.song_choice);
+
+        // Avoid keyboard appears on start
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         //Pop-up alert
         AlertDialog.Builder alertBuilder= new AlertDialog.Builder(getBaseContext());
